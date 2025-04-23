@@ -92,7 +92,7 @@ with tempfile.NamedTemporaryFile(mode="w+", delete=False, suffix=".html") as tmp
     html_content = html_content.replace(
         '</body>',
         """
-<div id=\"year-label\" style=\"position: absolute; top: 20px; right: 40px; font-size: 24px; font-weight: bold; color: white; background: rgba(0, 0, 0, 0.5); padding: 6px 14px; border-radius: 12px; z-index: 2; font-family: 'Courier New', monospace;\">Starting...</div>
+<div id=\"year-label\" style=\"position: absolute; top: 20px; right: 40px; font-size: 24px; font-weight: bold; color: white; background: rgba(0, 0, 0, 0.5); padding: 6px 14px; border-radius: 12px; z-index: 2;\">Starting...</div>
 
 <style>
 #mynetwork {
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function addNext() {
             if (index >= papers.length) {
-                yearLabel.textContent = "✅ Complete";
+                yearLabel.textContent = "Complete";
                 return;
             }
 

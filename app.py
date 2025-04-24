@@ -11,7 +11,8 @@ st.markdown("A Tribute to His Scholarly Legacy (1969–2025)")
 
 # Load data
 # data_path = os.path.join("public", "full_data.json")
-data_path = os.path.join("public", "pat_works_citations.json")
+# data_path = os.path.join("public", "pat_works_citations.json")
+data_path = os.path.join("public", "pat_works_citations_aff.json")
 with open(data_path, "r") as f:
     data = json.load(f)
 
